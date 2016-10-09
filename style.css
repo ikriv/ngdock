@@ -1,0 +1,67 @@
+/* Styles go here */
+
+body {
+  padding: 0;
+  margin: 0;
+    color: lightgray;
+}
+
+.main-header {
+    font-size: xx-large;
+    background-color: blue;
+    padding: 5px;
+
+}
+
+.second-header {
+    font-size: x-large;
+    background-color: teal;
+    padding: 5px;
+}
+
+.error-message {
+    font-size: x-large;
+    background-color: red;
+    padding: 5px;
+}
+
+.view-header {
+    background-color: darkgreen;
+    padding: 5px;
+}
+
+.main-view {
+    background-color: green;
+    position: relative;
+    border: solid red 5px;
+}
+
+.main-view-content {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.view-bottom-right {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: cyan;
+}
+
+.view-left-bar {
+    color: red;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.view-right-bar {
+    color: darkred;
+    background-color: orange;
+    padding: 10px;
+}
+
+.view-footer {
+    color: white;
+    background-color: magenta;
+    padding: 20px;
+}

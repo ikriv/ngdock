@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="testdock">
+<head>
+    <title>Ng-Dock sample</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src='ng-dock.js'></script>
+    <script src="script.js"></script>
+
+</head>
+ <body dock-panel ng-controller="sampleController">
+     <div class="error-message" dock="'top'" ng-show="isBarVisible[0]">Error message</div>
+     <div class="main-header" dock="top" ng-show="isBarVisible[1]">Main header</div>
+     <div class="second-header" dock="top" ng-show="isBarVisible[2]">Secondary header</div>
+     <div class="main-view" dock="fill" dock-panel>
+         <div class="view-header" dock="top" ng-show="isBarVisible[3]">Main view header</div>
+         <div class="view-left-bar" dock="left" ng-show="isBarVisible[4]">Left bar</div>
+         <div class="view-right-bar" dock="right" ng-show="isBarVisible[5]">Right bar</div>
+         <div class="view-footer" dock="bottom" ng-show="isBarVisible[6]">Footer</div>
+         <div dock="fill" class="main-view-content">
+             <p>Main view content</p>
+             <p>
+                 <input type="checkbox" ng-model="isBarVisible[0]" />Error message<br />
+                 <input type="checkbox" ng-model="isBarVisible[1]" />Main header<br />
+                 <input type="checkbox" ng-model="isBarVisible[2]" />Secondary header<br />
+                 <input type="checkbox" ng-model="isBarVisible[3]" />Main view header<br />
+                 <input type="checkbox" ng-model="isBarVisible[4]" />Left bar<br />
+                 <input type="checkbox" ng-model="isBarVisible[5]" />Right bar<br />
+                 <input type="checkbox" ng-model="isBarVisible[6]" />Footer<br />
+             </p>
+             <div class="view-bottom-right">Bottom Right</div>
+         </div>
+             
+
+     </div>
+ </body>
+</html>
+
+
